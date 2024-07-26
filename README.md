@@ -14,8 +14,7 @@ Pastikan Anda memiliki alat dan perangkat lunak berikut diinstal pada sistem And
 Untuk memulai, pertama-tama clone repository dari GitHub:
 
 ```bash
-git clone https://github.com/username/todo-api.git
-cd todo-api
+git clone https://github.com/ZudaPradana/server-to-do-net.git
 ```
 
 ## Menjalankan Server
