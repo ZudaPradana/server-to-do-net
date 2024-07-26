@@ -16,3 +16,10 @@ Untuk memulai, pertama-tama clone repository dari GitHub:
 ```bash
 git clone https://github.com/username/todo-api.git
 cd todo-api
+```
+
+## Menjalankan Server
+Untuk menjalankan server, gunakan perintah berikut:
+```bash
+dotnet run
+```
