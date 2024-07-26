@@ -22,3 +22,17 @@ Untuk menjalankan server, gunakan perintah berikut:
 ```bash
 dotnet run
 ```
+
+## Schema DB
+Untuk menyesuaikan dengan project, anda bisa mengikut query berikut:
+```bash
+CREATE TABLE todos
+(
+    Id SERIAL PRIMARY KEY,
+    Title VARCHAR(255),
+    Description TEXT,
+    DueDate TIMESTAMP,
+    IsCompleted BOOLEAN,
+    Reminder TIMESTAMP
+);
+```
