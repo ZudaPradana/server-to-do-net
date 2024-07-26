@@ -10,10 +10,7 @@ namespace server_to_do.DB
             
         }
 
-        DbSet<Category> Categories { get; set; }
-        DbSet<Todo> Todos { get; set; }
-        DbSet<User> Users { get; set; }
-
+        public DbSet<Todo> Todos { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.HasDefaultSchema("todo_app"); //default schema

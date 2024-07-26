@@ -6,20 +6,18 @@ namespace server_to_do.Models
     [Table("todos")]
     public class Todo
     {
-        [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Column("id")]
         public int Id { get; set; }
+        [Column("title")]
         public string Title { get; set; }
-        public string Description { get; set; }
-        public DateTime? DueDate { get; set; }
-        public string Status { get; set; }
-        public int? Priority { get; set; }
-        public DateTime CreatedAt { get; set; }
-        public DateTime UpdatedAt { get; set; }
-        public int UserId { get; set; }
-        public int? CategoryId { get; set; }
-        // Navigator
-        public List<User> Users { get; set; } = new List<User>();
-        public List<Category> Categories { get; set; } = new List<Category>();
+        [Column("description")]
+        public string? Description { get; set; }
+        [Column("duedate")]
+        public DateTime DueDate { get; set; }
+        [Column("iscompleted")]
+        public bool IsCompleted { get; set; } = false;
+        [Column("reminder")]
+        public DateTime? Reminder { get; set; }
     }
 }
